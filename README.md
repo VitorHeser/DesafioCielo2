@@ -12,9 +12,9 @@ Em um terminal, execute o comando `npm start` na raiz do projeto, o qual iniciar
 Navegue até `http://localhost:8000/` para acessar o frontend.
 
 <img src="https://github.com//VitorHeser/DesafioCielo2/blob/develop/app/assets/print/screen1.PNG?raw=true" alt="exemplo1.PNG">
-<img src="https://github.com/VitorHeser//DesafioCielo2/blob/develop/app/assets/print/screen2.PNG?raw=true" alt="exemplo2.PNG">
-<img src="https://github.com/VitorHeser//DesafioCielo2/blob/develop/app/assets/print/screen3.PNG?raw=true" alt="exemplo3.PNG">
-<img src="https://github.com/VitorHeser//DesafioCielo2/blob/develop/app/assets/print/screen4.PNG?raw=true" alt="exemplo4.PNG">
+<img src="https://github.com//VitorHeser/DesafioCielo2/blob/develop/app/assets/print/screen2.PNG?raw=true" alt="exemplo2.PNG">
+<img src="https://github.com//VitorHeser/DesafioCielo2/blob/develop/app/assets/print/screen3.PNG?raw=true" alt="exemplo3.PNG">
+<img src="https://github.com//VitorHeser/DesafioCielo2/blob/develop/app/assets/print/screen4.PNG?raw=true" alt="exemplo4.PNG">
 
 
 ## Backend
