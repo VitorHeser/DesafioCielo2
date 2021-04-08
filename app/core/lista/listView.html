@@ -1,0 +1,37 @@
+<div class="panel panel-primary" style="margin-top: 10px;">
+    <div class="panel-heading">
+        <h3 class="panel-title">Pagamentos</h3>
+    </div>
+    <div class="panel-body">
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th >Data do lançamento</th>
+                        <th >Descrição</th>
+                        <th >Número</th>
+                        <th >Situação</th>
+                        <th >Data de confirmação</th>
+                        <th >Dados bancários</th>
+                        <th >Valor final</th>
+                    </tr>
+                </thead>
+                <tr data-ng-repeat="todo in IC.todos| filter: search" class="repeat-animation">
+                    <td>{{todo.dataEfetivaLancamento}}</td>
+                    <td>{{todo.lancamentoContaCorrenteCliente != undefined && todo.lancamentoContaCorrenteCliente != null ? (todo.lancamentoContaCorrenteCliente.nomeTipoOperacao )  : ""}}</td>
+                    <td>{{todo.numeroEvento}}</td>
+                    <td>{{todo.lancamentoContaCorrenteCliente != undefined && todo.lancamentoContaCorrenteCliente != null ? (todo.lancamentoContaCorrenteCliente.nomeSituacaoRemessa ) : ""}}</td>
+                    <td>{{todo.dataLancamentoContaCorrenteCliente}}</td>
+                    <td>{{ 
+                            (    
+                                todo.nomeBanco + 
+                                " Ag " + todo.lancamentoContaCorrenteCliente.dadosDomicilioBancario.numeroAgencia +
+                                " CC " +  todo.lancamentoContaCorrenteCliente.dadosDomicilioBancario.numeroContaCorrente
+                            ) 
+                        }}</td>
+                    <td>R$ {{todo.valorLancamentoRemessa.toLocaleString(undefined, {minimumFractionDigits: 2,maximumFractionDigits: 2}) || "" }}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
